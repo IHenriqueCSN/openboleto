@@ -106,18 +106,16 @@
                <?php echo $aceite ?>
             </div>
          </td>
-         <td width="110">
+         <td width="110" class="bottomborder" style="border-bottom: 1px solid black;">
             <div class="titulo">Data processamento</div>
             <div class="conteudo">
-               <?php echo $data_processamento ?>
+               <?php echo $data_processamento ?: '&nbsp;' ?>
             </div>
          </td>
          <td>
-            <div class="titulo">(=) Valor do Documento</div>
+            <div class="titulo" style="border-bottom: 1px solid black;">(=) Valor do Documento</div>
             <div class="conteudo rtl">
-               <?php if ($imprime_valor) {
-                        echo $valor_documento;
-                    } ?>
+               <?php echo $imprime_valor ? $valor_documento : '&nbsp;' ?>
             </div>
          </td>
       </tr>
