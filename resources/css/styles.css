@@ -40,6 +40,7 @@ body>div {
     font: 11pt Arial;
     width: 100% !important;
     height: 100mm !important;
+    border-collapse: collapse;
 }
 
 .table-boleto td {
